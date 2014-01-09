@@ -4,15 +4,17 @@
 <head>
     <meta charset="utf-8">
 
-    <title>reveal.js - The HTML Presentation Framework</title>
+    <title>Moda Marketing/FED Collaboration</title>
 
-    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-    <meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A presentation for Marketing from the Moda FED team">
+    <meta name="author" content="Josh Schneider">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/mktfed.css" id="theme">
@@ -26,8 +28,8 @@
     </script>
 
     <!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
 </head>
 
 <body>
@@ -36,7 +38,7 @@
 
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
-            <section>&nbsp;
+            <section>
                 <h1>FED-Marketing Collaboration Initiative
                 </h1>
             </section>
@@ -46,10 +48,10 @@
             </section>
             <section>
                 <h2>Utilizing <i>
-			                <b>modern tools</b>
-			            </i> to implement industry-standard <i>
-			            <b>best practices</b>
-			            </i> in UX design and front-end development
+                            <b>modern tools</b>
+                        </i> to implement industry-standard <i>
+                        <b>best practices</b>
+                        </i> in UX design and front-end development
                 </h2>
             </section>
             <section>
@@ -62,18 +64,18 @@
                         <li data-fragment-index="3" class="fragment">Conflicting guidelines and patterns from project-to-project</li>
                     </ul>
                     <li data-fragment-index="4" class="fragment">No regular practice of site/app optimization on the front-end, which can significantly degrade experience for end-users</li>
-                    <li data-fragment-index="4" class="fragment">Lack of FED/Marketing collaboration and planning</li>
+                    <li data-fragment-index="5" class="fragment">Lack of FED/Marketing collaboration and planning</li>
                 </ul>
             </section>
-            <section></section>
+
             <section>
                 <h2>Goal: A Living Style Guide</h2>
-                <p>Serves as</p>
+                <p data-fragment-index="0" class="fragment">Serves as</p>
                 <ul>
-                    <li data-fragment-index="0" class="fragment">a live, centrally updatable, web reference</li>
-                    <li data-fragment-index="1" class="fragment">a standard codebase reference</li>
-                    <li data-fragment-index="2" class="fragment">a platform for enabling smarter, faster, and more consistent design-&gt;development workflow</li>
-                    <li data-fragment-index="3" class="fragment">a place to implement design and development practices that will make our sites better (faster, stronger, taller, whiter teeth, etc)</li>
+                    <li data-fragment-index="1" class="fragment">a live, centrally updatable, web reference</li>
+                    <li data-fragment-index="2" class="fragment">a standard codebase reference</li>
+                    <li data-fragment-index="3" class="fragment">a platform for enabling smarter, faster, and more consistent design-&gt;development workflow</li>
+                    <li data-fragment-index="4" class="fragment">a place to implement design and development practices that will make our sites better (faster, stronger, taller, whiter teeth, etc)</li>
                 </ul>
             </section>
             <section>
@@ -81,185 +83,150 @@
                 </h2>
                 <ul>
                     <li data-fragment-index="0" class="fragment">Responsive-adaptive design</li>
-                    <ul>
+                    <!--<ul>
                         <li data-fragment-index="1" class="fragment">Distinctions and variations</li>
                         <li data-fragment-index="2" class="fragment">Layout grids</li>
                         <li data-fragment-index="3" class="fragment">Mobile-first approach</li>
-                    </ul>
+                    </ul>-->
                     <li data-fragment-index="4" class="fragment">Typographic scale</li>
                     <li data-fragment-index="5" class="fragment">Form validation</li>
                     <li data-fragment-index="7" class="fragment">UI libraries, targeted tools, frameworks</li>
                     <li data-fragment-index="8" class="fragment">Theming vs browser chrome</li>
-                    <li data-fragment-index="8" class="fragment">Branding vs native UI emulation</li>
-                    <li data-fragment-index="9" class="fragment">Graded browser and device support matrix</li>
-                    <li data-fragment-index="10" class="fragment">Collaboration</li>
+                    <li data-fragment-index="9" class="fragment">Branding vs native UI emulation</li>
+                    <li data-fragment-index="10" class="fragment">Graded browser and device support matrix</li>
+                    <li data-fragment-index="11" class="fragment">Marketing/FED Collaboration</li>
                 </ul>
             </section>
-            <section>
-                <h2>Responsive - Adaptive</h2>
-                <p>One site/application serves all devices</p>
-                <p data-fragment-index="0">
+            <section class="stack">
+                <section>
+                    <h2>Responsive - Adaptive</h2>
+                    <p>One site/application serves all devices</p>
                     <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/joshtestods-gmail-com/images/203011/responsive-design.jpg">
+                </section>
+                <section>
+                    <h2>Elements of Responsive Design</h2>
+                    <h3>Fluid</h3>
 
-                </p>
-            </section>
-            <section>
-                <h2>Elements of Responsive Design</h2>
-                <h3>Fluid</h3>
+                    <p class="fragment" data-fragment-index="0">Design in proportions, not pixels</p>
+                    <p class="fragment" data-fragment-index="1">Elements continuously resize/reflow as viewport size changes</p>
+                    <p>
+                        <a data-fragment-index="2" class="fragment" href="http://clearleft.com" target="_blank">Example</a>
+                    </p>
+                </section>
+                <section>
+                    <h2>Elements of Responsive Design</h2>
+                    <h3>Media queries and breakpoints</h3>
 
-                <p class="fragment" data-fragment-index="0">Fluid design and layout (design in proportions, not pixels)</p>
-                <p class="fragment" data-fragment-index="1">Elements continuously resize/reflow as viewport size changes</p>
-                <p>
-                    <a data-fragment-index="2" class="fragment" href="http://demosthenes.info/blog/586/CSS-Fluid-Image-Techniques-for-Responsive-Site-Design" target="_blank">Example</a>
-                </p>
+                    <p data-fragment-index="0" class="fragment">Page elements and layout can fundamentally change at specific viewport sizes, when device orientation changes, etc</p>
+                    <p data-fragment-index="1" class="fragment">Elements may reorder themselves, vertically and/or horizontally</p>
+                    <!-- <p data-fragment-index="2" class="fragment">UX can change, e.g. horizontal menu -&gt; hamburger/stack menu</p> -->
+                    <p data-fragment-index="3" class="fragment">
+                        <a href="http://thenextweb.com" target="_blank">Example</a>
+                    </p>
+                </section>
+                <section>
+                    <h2>Elements of Responsive Design</h2>
+                    <h3>Responsive elements</h3>
+                    <p class="fragment" data-fragment-index="0">
+                        Page elements like images may also be delivered in multiple sizes or versions for different breakpoint ranges
+                    </p>
+                    <div class="fragment" data-fragment-index="1">
+                        <a href="http://gumbyframework.com/docs/extensions/#!/responsive-images" target="_blank">Example</a>
+                    </div>
+                </section>
+                <section>
+                    <h2>Elements of Responsive Design</h2>
+                    <h3>CSS grid system</h3>
+                    <p data-fragment-index="0" class="fragment">Defines columns, gutters, and rows, for clean and consistent layout</p>
 
+                    <ul>
+                        <li data-fragment-index="1" class="fragment">
+                            <a href="http://www.designinfluences.com/fluid960gs/" target="_blank">Fluid grid</a>
+                        </li>
 
+                        <li data-fragment-index="2" class="fragment">
+                            <a href="http://www.getskeleton.com/#grid" target="_blank">Responsive grid</a>
+                        </li>
 
+                        <li data-fragment-index="3" class="fragment">
+                            <a href="http://gumbyframework.com/features/grid/" target="_blank">Fluid, responsive grid</a>
+                        </li>
+                    </ul>
 
+                    <ul>
 
+                    </ul>
+                    <p class="fragment" data-fragment-index="4">
+                        With a fluid, responsive grid, layout elements stretch/shrink horizontally and layout can also fundamentally change at specified breakpoints, determined by media queries.
+                    </p>
+                </section>
+                <section>
+                    <h2>Adaptive
+                    </h2>
+                    <p class="fragment" data-fragment-index="0">Beyond media queries and breakpoints, other techniques are used to deliver unique content or UX tailored to specific devices or device capabilities</p>
+                    <p class="fragment" data-fragment-index="1">
+                        <a href="http://www.threadless.com/" target="_blank">Example</a>
+                    </p>
+                    <p class="fragment" data-fragment-index="2">
+                        <a href="http://www.etsy.com/" target="_blank">Another example - change the UA and watch it reflow</a>
+                    </p>
+                </section>
+                <section>
+                    <h2>Mobile-first philosophy</h2>
+                    <p data-fragment-index="0" class="fragment">Make design, UX, <b>
+                            <i>content</i>
+                        </b>, and development choices optimal for&nbsp;</p>
 
-            </section>
-            <section>
-                <h2>Elements of Responsive Design</h2>
-                <h3>Media queries and breakpoints</h3>
+                    <ul>
+                        <li data-fragment-index="1" class="fragment">
+                            small viewports&nbsp;
 
-                <p data-fragment-index="0" class="fragment">"Breakpoints" define viewport sizes, orientations (among other options) at which layout fundamentally changes</p>
-                <p data-fragment-index="1" class="fragment">Elements may reorder, vertically and/or horizontally</p>
-                <p data-fragment-index="2" class="fragment">UI elements may fundamentally change, e.g. horizontal menu -&gt; hamburger/stack menu</p>
-                <p data-fragment-index="3" class="fragment">
-                    <a href="http://thenextweb.com" target="_blank">Example</a>
-                </p>
+                        </li>
+                        <li data-fragment-index="2" class="fragment">
+                            limited bandwidth
 
+                        </li>
+                        <li data-fragment-index="3" class="fragment">
+                            touch-based input
 
+                        </li>
+                        <li data-fragment-index="4" class="fragment">
+                            short attention span&nbsp;…
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Mobile-first</h2>
+                    <h3>Progressive enhancement</h3>
 
+                    <p data-fragment-index="0" class="fragment">Mobile-first is an extension of "progressive enhancement" philosophy</p>
 
-
-
-            </section>
-            <section>
-                <h2>Elements of Responsive Design</h2>
-                <h3>Responsive elements</h3>
-                <div class="fragment" data-fragment-index="0">
-                    Some page elements, like images, may also be served in multiple sizes or versions
-
-                </div>
-                <div class="fragment" data-fragment-index="1">
-                    <a href="http://gumbyframework.com/docs/extensions/#!/responsive-images" target="_blank">Example</a>
-                </div>
-
-            </section>
-            <section>
-                <h2>Elements of Responsive Design</h2>
-                <h3>CSS grid system</h3>
-                <p data-fragment-index="0" class="fragment">Defines columns, gutters, and rows, for clean and consistent layout</p>
-
-                <ul>
-                    <li data-fragment-index="1" class="fragment">
-                        <a href="http://www.designinfluences.com/fluid960gs/" target="_blank">Fluid grid</a>
-                    </li>
-
-                    <li data-fragment-index="2" class="fragment">
-                        <a href="http://www.getskeleton.com/#grid" target="_blank">Responsive grid</a>
-                    </li>
-
-                    <li data-fragment-index="3" class="fragment">
-                        <a href="http://gumbyframework.com/features/grid/" target="_blank">Fluid, responsive grid</a>
-                    </li>
-                </ul>
-
-                <ul>
-
-                </ul>
-                <div class="fragment" data-fragment-index="4">
-                    With a fluid, responsive grid, layout elements stretch/shrink horizontally and layout can also fundamentally change at specified breakpoints
-
-                </div>
-            </section>
-            <section>
-                <h2>Adaptive
-                </h2>
-                <p class="fragment" data-fragment-index="0">Beyond media queries and breakpoints, other techniques are used to deliver <b>
-			<i>only</i>
-			</b> content or UX tailored to specific devices or capabilities</p>
-                <p class="fragment" data-fragment-index="1">
-                    <a href="http://www.threadless.com/" target="_blank">Example</a>
-                </p>
-                <p class="fragment" data-fragment-index="2">
-                    <a href="http://www.etsy.com/" target="_blank">Another example - change the UA and watch it reflow</a>
-                </p>
-
-
-
-            </section>
-            <section>
-                <h2>Mobile-first philosophy</h2>
-                <p data-fragment-index="0" class="fragment">Make design, UX, <b>
-			    <i>content</i>
-			</b>, and development choices optimal for&nbsp;</p>
-
-                <ul>
-                    <li data-fragment-index="1" class="fragment">
-                        small viewports&nbsp;
-
-                    </li>
-                    <li data-fragment-index="2" class="fragment">
-                        limited bandwidth
-
-                    </li>
-                    <li data-fragment-index="3" class="fragment">
-                        touch-based input
-
-                    </li>
-                    <li data-fragment-index="4" class="fragment">
-                        short attention span&nbsp;…
-                    </li>
-                </ul>
-
-
-
-
-
-
-            </section>
-            <section>
-                <h2>Mobile-first</h2>
-                <h3>Progressive enhancement</h3>
-
-                <p data-fragment-index="0" class="fragment">Mobile-first is an extension of "progressive enhancement" philosophy</p>
-
-                <ul>
-                    <li data-fragment-index="0" class="fragment">
-                        Mobile UX is baseline
-                    </li>
-                    <li data-fragment-index="1" class="fragment">
-                        "Scale up" for
-                    </li>
-                    <li>
+                    <ul>
+                        <li data-fragment-index="1" class="fragment">
+                            Mobile UX is baseline
+                        </li>
+                        <li data-fragment-index="2" class="fragment">
+                            "Scale up" for
+                        </li>
                         <ul>
-                            <li class="fragment" data-fragment-index="2">larger viewports</li>
-                            <li class="fragment" data-fragment-index="3">higher bandwidth</li>
-                            <li class="fragment" data-fragment-index="4">other types of input (mouse, etc.) …</li>
+                            <li class="fragment" data-fragment-index="3">larger viewports</li>
+                            <li class="fragment" data-fragment-index="4">higher bandwidth</li>
+                            <li class="fragment" data-fragment-index="5">other types of input (mouse, etc.) …</li>
                         </ul>
-                    </li>
-                </ul>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Mobile-first</h2>
 
+                    <p data-fragment-index="0" class="fragment">
+                        Allow mobile UX priority to guide design decisions, promoting leaner, cleaner sites for all users
 
-
-            </section>
-            <section>
-                <h2>Mobile-first</h2>
-
-                <p data-fragment-index="0" class="fragment">
-                    Allow mobile UX priority to guide design decisions, promoting leaner, cleaner sites for all users
-
-                </p>
-
-
-
+                    </p>
+                </section>
             </section>
             <section>
                 <h2>Typographic scale</h2>
-                <p class="fragment" data-fragment-index="0">Similar to a layout grid, but specifically for creating&nbsp; consistent and visually pleasing typographic flow .
+                <p class="fragment" data-fragment-index="0">Similar to a layout grid, but specifically for creating consistent and visually pleasing typographic flow .
                 </p>
                 <p class="fragment" data-fragment-index="1">Take guesswork out of typographic layout, based on established ratios and mathematical formulas</p>
                 <p class="fragment" data-fragment-index="2">Avoid layout breakage associated with "pixel pushing"</p>
@@ -267,12 +234,8 @@
                 <p class="fragment" data-fragment-index="3">
                     <a href="http://nicewebtype.com/fonts/minion-with-myriad-condensed-noms/" target="_blank">Example with switch for with and without scale</a>
                 </p>
-
-
-
-
-
             </section>
+            
             <section>
                 <h2>Form validation</h2>
                 <p data-fragment-index="0" class="fragment">All websites and applications should have predictable, meaningful, and unobtrusive form validation and client-side feedback</p>
@@ -289,9 +252,6 @@
             <section>
                 <h2>UI libraries
                 </h2>
-
-
-
                 <p data-fragment-index="2" class="fragment left">Strong points:
                 </p>
                 <ul>
@@ -348,8 +308,6 @@
                         <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/joshtestods-gmail-com/images/207481/Capture.JPG">&nbsp;</p>
                     <p data-fragment-index="2" class="fragment">Can add complexity for development and appropriate validation feedback</p>
                 </div>
-
-
             </section>
             <section>
                 <h2>Theming vs browser chrome</h2>
@@ -359,9 +317,6 @@
                 </div>
                 <div class="fragment" data-fragment-index="1">
                     <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/joshtestods-gmail-com/images/207520/Untitled-2.png">
-
-
-
                 </div>
             </section>
             <section>
@@ -380,9 +335,6 @@
                     <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/joshtestods-gmail-com/images/201548/mobile2_date.JPG">
                 </div>
                 <p>Not maintainable, or inherently in line with responsive design</p>
-
-
-
             </section>
             <section>
                 <h2>Branding vs native UI emulation</h2>
@@ -415,9 +367,6 @@
                 <p data-fragment-index="7" class="fragment">
                     <a href="http://foundation.zurb.com/learn/features.html" target="_blank">Example</a>
                 </p>
-
-
-
             </section>
             <section class="stack">
                 <section>
@@ -468,9 +417,6 @@
                         <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/joshtestods-gmail-com/images/208554/Untitled-2.png">
 
                     </div>
-
-
-
                 </section>
                 <section>
                     <h2>Platform trends</h2>
@@ -515,11 +461,11 @@
             center: true,
 
             theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-            transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
-            // Parallax scrolling
-            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-            // parallaxBackgroundSize: '2100px 900px',
+            //Parallax scrolling
+            parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            parallaxBackgroundSize: '2100px 900px',
 
             // Optional libraries used to extend on reveal.js
             dependencies: [{
