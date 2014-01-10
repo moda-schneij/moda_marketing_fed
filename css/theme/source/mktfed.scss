@@ -77,8 +77,16 @@ $selectionBackgroundColor: rgba(79, 64, 28, 0.99);
 	@include radial-gradient( rgba(247,242,211,1), rgba(255,255,255,1) );
 }
 
-
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+// Other overrides (including to template)
+	.reveal section .animator {
+		background: none;
+		border: 0 none;
+		box-shadow: none;
+		text-transform: none;
+		display: inline-block;
+	}
+//

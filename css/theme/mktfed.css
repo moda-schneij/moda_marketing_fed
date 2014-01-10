@@ -151,3 +151,10 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #8b743d; }
+
+.reveal section .animator {
+  background: none;
+  border: 0 none;
+  box-shadow: none;
+  text-transform: none;
+  display: inline-block; }
