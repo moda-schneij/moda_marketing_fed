@@ -4,7 +4,6 @@
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
-
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
@@ -52,7 +51,8 @@ $mainColor: #fff;
 		$heading1TextShadow: none;
 	//
 //$headingColor: #333;
-$headingColor: #ccc;
+//$headingColor: #ccc;
+$headingColor: blue;
 $headingTextShadow: none;
 $backgroundColor: #f7f3de;
 $linkColor: #8b743d;
