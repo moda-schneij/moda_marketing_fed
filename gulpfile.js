@@ -55,7 +55,7 @@ gulp.task('sass', function() {
 			'!css/theme/source/settings.scss'
 			])
         .pipe(sass({
-			includePaths: ['css/theme/template']
+			includePaths: ['css/theme/template'] //always necessary if there are includes in another path
 		}))
         .pipe(gulp.dest('css/theme'))
 		.pipe(livereload(lr_server));

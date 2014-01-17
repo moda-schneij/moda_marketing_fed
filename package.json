@@ -52,7 +52,10 @@
     "connect-livereload": "~0.3.2",
     "gulp-jade": "~0.3.0",
     "gulp-imagemin": "~0.1.4",
-    "gulp-csso": "~0.1.7"
+    "gulp-csso": "~0.1.7",
+    "grunt-reload": "~0.2.0",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-open": "~0.2.2"
   },
   "licenses": [
     {
