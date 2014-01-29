@@ -403,20 +403,20 @@
             <section class="stack">
                 <section>
                     <h2>Graded browser/device support matrix</h2>
-                    <p class="fragment" data-fragment-index="0">Establish and maintain a matrix of browser and device support, with categories such as:</p>
+                    <p class="fragment" data-fragment-index="0">Establish and maintain a matrix of browser and device support, with categories such as (summarized from Yahoo's YUI library standards):</p>
 
                     <ul>
                         <li class="fragment" data-fragment-index="1">
-                            Fully supported and tested for grade A UX
+                            <strong>A-grade:</strong> Fully tested browsers/devices that provide top-level UX ("advanced functionality and visual fidelity")
                         </li>
                         <li class="fragment" data-fragment-index="2">
-                            Expected to deliver good UX [is modern, same engine(s) as a tested browser/device], but don't test
+                            <strong>C-grade:</strong> An identified set of browsers/devices that should provide minimally acceptable UX (aka, "core support"); a handful of these will be tested
                         </li>
                         <li class="fragment" data-fragment-index="3">
-                            Supported, but only guaranteed to provide minimally acceptable UX
+                            <strong>X-grade:</strong> Identified and expected to deliver good UX, but not tested; also all unknown/unidentified browsers/devices, and known new, but untested versions
                         </li>
                         <li class="fragment" data-fragment-index="4">
-                            Unsupported
+                            <strong>Unsupported</strong> (optional, and debatably a bad idea): Identified browsers/devices that may provide completely broken UX, or have no guarantee of "core support." 
                         </li>
                     </ul>
 
@@ -425,7 +425,7 @@
                     <h2>Graded browser/device support matrix</h2>
                     <ul>
                         <li class="fragment" data-fragment-index="0">
-                            Based on our own and industry analytics
+                            Make decisions based on our own and industry analytics
                         </li>
                         <li class="fragment" data-fragment-index="1">
                             Should be reassessed every 6 months

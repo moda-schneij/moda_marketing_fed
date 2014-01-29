@@ -36,8 +36,32 @@
 
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,400italic,600italic);
 
+@keyframes vertSlide {
+	from {
+		top: 0;
+	}
+	to {
+		top: 5em;
+	}
+}
+@-webkit-keyframes vertSlide {
+	from {
+		top: 0;
+	}
+	to {
+		top: 5em;
+	}
+}
 
-
+@mixin vertAnimation ($selector) {
+	#{$selector} {
+		position: relative;
+	}
+	#{$selector}:hover {
+		animation: vertSlide 3s;
+		-webkit-animation: vertSlide 3s;
+	}
+} 
 // Override theme settings (see ../template/settings.scss)
 	// Override Primary/body text
 		$mainFont: 'josefin_sansregular', sans-serif;
@@ -58,6 +82,7 @@ $backgroundColor: #f7f3de;
 $linkColor: #8b743d;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(79, 64, 28, 0.99);
+$strongColor: #ffe92c;
 //$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
 
 	// Override layout
@@ -88,5 +113,10 @@ $selectionBackgroundColor: rgba(79, 64, 28, 0.99);
 		box-shadow: none;
 		text-transform: none;
 		display: inline-block;
+	}
+	@include vertAnimation(".reveal section .animator");
+	.reveal strong, .reveal .strong {
+		font-weight: normal;
+		color: $strongColor;
 	}
 //
