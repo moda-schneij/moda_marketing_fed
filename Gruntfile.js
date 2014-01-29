@@ -115,21 +115,31 @@ module.exports = function(grunt) {
         
         open: {
             all: {
-                files: { src: ['./index.html'] },
+                //files: { src: ['./index.html'] },
                 path: 'http://localhost:<%= connect.server.options.port %>',
                 app: 'chrome'
             }
         },
 
-        zip: {
-            'reveal-js-presentation.zip': [
-                'index.html',
-                'css/**',
-                'js/**',
-                'lib/**',
-                'images/**',
-                'plugin/**'
-            ]
+        compress: {
+            main: {
+                options: {
+                    archive: 'reveal-js-presentation.zip'
+                },
+                files:  [{
+                    src: ['index.html',
+                        'css/**',
+                        'js/**',
+                        'lib/**',
+                        'images/**',
+                        'plugin/**'
+                    ],
+                    dest: './',
+                    filter: 'isFile'
+                }]
+                    
+            }
+           
         },
 
         watch: {
@@ -159,7 +169,7 @@ module.exports = function(grunt) {
     grunt.registerTask( 'themes', [ 'sass' ] );
 
     // Package presentation to archive
-    grunt.registerTask( 'package', [ 'default', 'zip' ] );
+    grunt.registerTask( 'package', [ 'default', 'compress' ] );
 
     // Serve presentation locally
     grunt.registerTask( 'serve', [ 'connect', 'open', 'watch' ] );

@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,400italic,600italic);
 /**
  * Beige theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,400italic,600italic);
 @font-face {
   font-family: 'josefin_sansregular';
   src: url("../../lib/font/josefinsans-regular-webfont.eot");
@@ -30,7 +30,7 @@ body {
   background-color: #f7f3de; }
 
 .reveal {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "josefin_sansregular", sans-serif;
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;

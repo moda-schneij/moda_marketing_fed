@@ -101,18 +101,19 @@ gulp.task('default', function() {
 			return console.log(error);
 		}
 		console.log('Livereload server running');
-		gulp.watch([ 
-			'css/theme/source/*.scss',
-			'css/theme/template/*.scss'
-			], function(event) {
-			gulp.run('sass');
-		});
-		gulp.watch([
-			'**/*.html',
-			'**.php'
-			], function(event) {
-			gulp.run('reload');
-		});
+		// gulp.watch([ 
+		// 	'css/theme/source/*.scss',
+		// 	'css/theme/template/*.scss'
+		// 	], function(event) {
+		// 	gulp.run('sass');
+		// });
+		// gulp.watch([
+		// 	'**/*.html',
+		// 	'**.php'
+		// 	], function(event) {
+		// 	gulp.run('reload');
+		// });
+		gulp.run('watch');
 	});
 	
 	gulp.run('serve');
