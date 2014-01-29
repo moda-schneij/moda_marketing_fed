@@ -5,6 +5,7 @@
  */
 
 // Default mixins and settings -----------------
+@import "compass/typography/text/replacement";
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
@@ -61,7 +62,8 @@
 		animation: vertSlide 3s;
 		-webkit-animation: vertSlide 3s;
 	}
-} 
+}
+
 // Override theme settings (see ../template/settings.scss)
 	// Override Primary/body text
 		$mainFont: 'josefin_sansregular', sans-serif;
@@ -118,5 +120,8 @@ $strongColor: #ffe92c;
 	.reveal strong, .reveal .strong {
 		font-weight: normal;
 		color: $strongColor;
+	}
+	.logo{
+		//@include replace-text-with-dimensions("moda.png");
 	}
 //
