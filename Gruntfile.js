@@ -109,6 +109,7 @@ module.exports = function(grunt) {
                     port: port,
                     base: '.',
                     middleware: livereloadMiddleware,
+                    hostname: '*'
                 }
             }
         },
@@ -116,7 +117,7 @@ module.exports = function(grunt) {
         open: {
             all: {
                 //files: { src: ['./index.html'] },
-                path: 'http://localhost:<%= connect.server.options.port %>',
+                path: 'http://127.0.0.1:<%= connect.server.options.port %>',
                 app: 'chrome'
             }
         },
